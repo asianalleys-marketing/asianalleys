@@ -184,6 +184,29 @@
             transform: translateX(-50%);
         }
         
+        /* list in methods */
+        ul.a {list-style-type: square;}
+        ul.b {list-style-type: lower-roman;}
+        ul.c {list-style-type: square;}
+
+        .b {
+            padding-left: 20px;
+            margin-left: auto; 
+        }
+
+        .b li {
+            list-style-position: inside;
+        }
+
+        .c {
+            padding-left : 20px;
+            margin-left: auto;
+        }
+
+        .c li { 
+            list-style-position: inside;
+        }
+
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
@@ -227,14 +250,14 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex items-center space-x-3">
-                    <img src="3.png" alt="Asian Alleys Studios" class="h-12 w-auto">
+                    <img src="12.png" alt="Asian Alleys Studios" class="h-12 w-auto">
                     <span class="font-bold text-xl tracking-tight text-stone-900 hidden sm:block">Asian Alleys Studios</span>
                 </div>
                 
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#process" class="brush-stroke text-stone-700 hover:text-red-600 transition-colors font-medium">Process</a>
                     <a href="#services" class="brush-stroke text-stone-700 hover:text-red-600 transition-colors font-medium">Services</a>
-                    <a href="#portfolio" class="brush-stroke text-stone-700 hover:text-red-600 transition-colors font-medium">Portfolio</a>
+                  <!--  <a href="#portfolio" class="brush-stroke text-stone-700 hover:text-red-600 transition-colors font-medium">Portfolio</a> -->
                     <a href="#contact" class="hanko text-sm uppercase tracking-widest">Contact</a>
                 </div>
 
@@ -257,7 +280,7 @@
         <div class="flex flex-col space-y-8 text-center">
             <a href="#process" class="text-2xl text-white hover:text-red-500 transition-colors mobile-link">Process</a>
             <a href="#services" class="text-2xl text-white hover:text-red-500 transition-colors mobile-link">Services</a>
-            <a href="#portfolio" class="text-2xl text-white hover:text-red-500 transition-colors mobile-link">Portfolio</a>
+           <!-- <a href="#portfolio" class="text-2xl text-white hover:text-red-500 transition-colors mobile-link">Portfolio</a> -->
             <a href="#contact" class="text-2xl text-red-500 mobile-link">Contact</a>
         </div>
     </div>
@@ -278,12 +301,12 @@
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="mb-8 inline-block">
-                <img src="3.png" alt="Asian Alleys Studios" class="h-32 md:h-48 w-auto mx-auto drop-shadow-2xl hero-logo">
+                <img src="12.png" alt="Asian Alleys Studios" class="h-32 md:h-48 w-auto mx-auto drop-shadow-2xl hero-logo">
             </div>
             
             <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-stone-900 mb-6 tracking-tight hero-title">
-                Crafting Digital<br>
-                <span class="text-red-600 serif-jp italic">Presence</span> That Stands Out
+                We Build Brands That Perform  <br>
+                <span class="text-red-600 serif-jp italic">Online</span> & Beyond
             </h1>
             
             <p class="text-xl md:text-2xl text-stone-600 mb-12 max-w-3xl mx-auto font-light hero-subtitle">
@@ -402,7 +425,7 @@
                 <span class="text-red-600 font-bold tracking-widest uppercase text-sm mb-2 block">Services</span>
                 <h2 class="text-4xl md:text-5xl font-black text-stone-900 mb-4 serif-jp">Our Expertise</h2>
                 <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
-                <p class="text-stone-600 max-w-2xl mx-auto">Traditional craftsmanship meets modern digital strategy</p>
+                <p class="text-stone-600 max-w-2xl mx-auto">Complete Digital Marketing & Creative Solutions</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -413,9 +436,30 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Social Media Marketing</h3>
-                    <p class="text-stone-600 leading-relaxed">Strategic content and campaigns to grow your audience across all platforms.</p>
-                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">Learn more →</div>
+                    
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">SEO Services in India Built for Long Term Growth</h3>
+                    <p class="text-stone-600 leading-relaxed">As a top digital marketing agency in India, we design SEO services that create sustainable organic growth. <br>
+                        <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer flex items-center gap-2" onclick="toggleService(this)">
+                     <span>Learn more</span>
+                     <span class="arrow transition-transform duration-300">↓</span>
+                    </div>
+
+                    <div class="extra-content mt-4 text-stone-600 hidden">
+                        <!-- YOU WILL ADD YOUR DETAILS HERE -->
+                        <p>We create organic growth systems that increase visibility, traffic, and authority.
+                        <br>
+                        <br>
+                        Our SEO services in India include: 
+                        <ul class="a" >
+                        <li>content calendars</li>
+                        <li> Engagement-focused social campaigns</li> 
+                        <li>Paid + organic growth systems</li> 
+                        <li>Reel optimization & short form strategy</li> 
+                        <li>Brand messaging frameworks</li></ul> 
+                        <br>
+                        We don’t post randomly.
+                        We position intentionally. </p>
+                        </div>
                 </div>
 
                 <!-- Service 2 -->
@@ -425,63 +469,157 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Web Design</h3>
-                    <p class="text-stone-600 leading-relaxed">Modern, responsive websites built for conversion and user experience.</p>
-                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">Learn more →</div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Social Media Marketing & Brand Positioning</h3>
+                    <p class="text-stone-600 leading-relaxed">In today’s digital world, attention is currency. </p>
+                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer flex items-center gap-2" onclick="toggleService(this)">
+                     <span>Learn more</span>
+                     <span class="arrow transition-transform duration-300">↓</span>
+                    </div>
+
+                    <div class="extra-content mt-4 text-stone-600 hidden">
+                        <!-- YOU WILL ADD YOUR DETAILS HERE -->
+                        <p>As a digital marketing agency in India, we build:
+                        <ul class="a" >
+                        <li>content calendars</li>
+                        <li> Engagement-focused social campaigns</li> 
+                        <li>Paid + organic growth systems</li> 
+                        <li>Reel optimization & short form strategy</li> 
+                        <li>Brand messaging frameworks</li></ul> 
+                        We don’t post randomly.
+                        We position intentionally.
+                        </p>
+                    </div>
                 </div>
+
+               
 
                 <!-- Service 3 -->
                 <div class="shoji-card p-8 group cursor-pointer">
                     <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors duration-300">
                         <svg class="w-7 h-7 text-red-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">SEO Optimization</h3>
-                    <p class="text-stone-600 leading-relaxed">Improve search visibility and drive organic traffic to your business.</p>
-                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">Learn more →</div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Performance Marketing That Converts </h3>
+                    <p class="text-stone-600 leading-relaxed">Clicks don’t build businesses. Conversions do. <br> Our performance campaigns combine data-driven performance marketing in India with creative strategy to drive real revenue. </p>
+                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer flex items-center gap-2" onclick="toggleService(this)">
+                     <span>Learn more</span>
+                     <span class="arrow transition-transform duration-300"> ↓</span>
+                    </div>
+
+                    <div class="extra-content mt-4 text-stone-600 hidden">
+                        <!-- YOU WILL ADD YOUR DETAILS HERE -->
+                        <p>We manage ROI-focused campaigns across:
+                        <ul class="a" >
+                        <li>Google Ads</li>
+                        <li>Meta Ads (Facebook & Instagram)</li>
+                        <li>YouTube Ads </li>
+                        <li>Retargeting funnels</li>
+                        <li>Landing page optimization</li></ul> 
+                        <br>
+                        We don’t post randomly.
+                        We position intentionally.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Service 4 -->
                 <div class="shoji-card p-8 group cursor-pointer">
                     <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors duration-300">
                         <svg class="w-7 h-7 text-red-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Paid Advertising</h3>
-                    <p class="text-stone-600 leading-relaxed">High-ROI campaigns across Google & Meta platforms.</p>
-                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">Learn more →</div>
-                </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Creative Production & Content Creation</h3>
+                    <p class="text-stone-600 leading-relaxed">Marketing without strong visuals is weak. <br>
+                    That’s why we produce in house as part of our digital marketing. </p>
+                        
+                </div> 
 
                 <!-- Service 5 -->
                 <div class="shoji-card p-8 group cursor-pointer">
                     <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors duration-300">
                         <svg class="w-7 h-7 text-red-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Content Creation</h3>
-                    <p class="text-stone-600 leading-relaxed">Professional visuals and storytelling that captures your brand essence.</p>
-                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">Learn more →</div>
-                </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Professional Photography</h3>
+                    <p class="text-stone-600 leading-relaxed">Visuals built to sell not just look good. 
+                        <br>
+                    <ul class="a" >
+                        <li>Product & Fashion Shoots.</li>
+                        <li>E Commerce Catalog Shoots.</li>
+                        <li>Brands Campaigns.</li>
+                    </ul> </p>
+                        
+                </div> 
 
                 <!-- Service 6 -->
                 <div class="shoji-card p-8 group cursor-pointer">
                     <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors duration-300">
                         <svg class="w-7 h-7 text-red-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Brand Strategy</h3>
-                    <p class="text-stone-600 leading-relaxed">Positioning your business for long-term success and recognition.</p>
-                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity">Learn more →</div>
-                </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Commercial Video Production</h3>
+                    <p class="text-stone-600 leading-relaxed">Every frame engineered for engagement. 
+                        <br>
+                    <ul class="a" >
+                        <li>Brand films.</li>
+                        <li>Ad Creative.</li>
+                        <li>Social Media and Promotional Reels.</li>
+                        <li> Campaign storytelling.</li>
+                    </ul> </p> 
+                </div> 
+
+                <!-- Service 7 -->
+                <div class="shoji-card p-8 group cursor-pointer">
+                    <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-red-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Drone Shoots & Cinematic Production</h3>
+                    <p class="text-stone-600 leading-relaxed">We capture scale.
+                        <br>
+                    <ul class="a" >
+                        <li> Aerial shoots.</li>
+                        <li> Event coverage.</li>
+                        <li> Large scale brand visuals.</li>
+                    </ul> </p>    
+                </div> 
+
+                <!-- Service 8 -->
+                <div class="shoji-card p-8 group cursor-pointer">
+                    <div class="w-14 h-14 bg-red-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-red-600 transition-colors duration-300">
+                        <svg class="w-7 h-7 text-red-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors"> Website Development & Conversion Systems</h3>
+                    <p class="text-stone-600 leading-relaxed">Because performance starts with structure.
+                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer flex items-center gap-2" onclick="toggleService(this)">
+                     <span>Learn more</span>
+                     <span class="arrow transition-transform duration-300"> ↓</span>
+                    </div>
+                        <div class="extra-content mt-4 text-stone-600 hidden">
+                        As a top digital marketing agency in India, we design:
+                        <br>
+                    <ul class="a" >
+                        <li> High converting business websites.</li>
+                        <li>  SEO optimized landing pages.</li>
+                        <li> E commerce stores.</li>
+                        <li> Funnel based sales systems</li>
+                        <li>Speed optimized.</li>
+                        <li>Conversion focused</li>
+                    </ul> </p>   
+                    </div> 
+                </div> 
             </div>
         </div>
     </section>
-
-    <!-- Portfolio Section -->
+<!--
+    <!-- Portfolio Section ---
     <section id="portfolio" class="py-24 bg-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
@@ -491,7 +629,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Portfolio Item 1 -->
+                <!-- Portfolio Item 1 
                 <div class="group relative overflow-hidden cursor-pointer h-80">
                     <div class="absolute inset-0 bg-gradient-to-br from-stone-800 to-stone-900 transition-transform duration-500 group-hover:scale-110"></div>
                     <div class="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/20 transition-colors duration-300"></div>
@@ -507,7 +645,7 @@
                     </div>
                 </div>
 
-                <!-- Portfolio Item 2 -->
+                <!-- Portfolio Item 2 -
                 <div class="group relative overflow-hidden cursor-pointer h-80">
                     <div class="absolute inset-0 bg-gradient-to-br from-red-900 to-red-700 transition-transform duration-500 group-hover:scale-110"></div>
                     <div class="absolute inset-0 flex flex-col justify-end p-8">
@@ -517,7 +655,7 @@
                     </div>
                 </div>
 
-                <!-- Portfolio Item 3 -->
+                <!-- Portfolio Item 3 --
                 <div class="group relative overflow-hidden cursor-pointer h-80">
                     <div class="absolute inset-0 bg-gradient-to-br from-stone-700 to-stone-800 transition-transform duration-500 group-hover:scale-110"></div>
                     <div class="absolute inset-0 flex flex-col justify-end p-8">
@@ -527,7 +665,7 @@
                     </div>
                 </div>
 
-                <!-- Portfolio Item 4 -->
+                <!-- Portfolio Item 4 --
                 <div class="group relative overflow-hidden cursor-pointer h-80">
                     <div class="absolute inset-0 bg-gradient-to-br from-stone-900 to-black transition-transform duration-500 group-hover:scale-110"></div>
                     <div class="absolute inset-0 flex flex-col justify-end p-8">
@@ -537,7 +675,7 @@
                     </div>
                 </div>
 
-                <!-- Portfolio Item 5 -->
+                <!-- Portfolio Item 5 --
                 <div class="group relative overflow-hidden cursor-pointer h-80">
                     <div class="absolute inset-0 bg-gradient-to-br from-red-800 to-red-600 transition-transform duration-500 group-hover:scale-110"></div>
                     <div class="absolute inset-0 flex flex-col justify-end p-8">
@@ -547,7 +685,7 @@
                     </div>
                 </div>
 
-                <!-- Portfolio Item 6 -->
+                <!-- Portfolio Item 6 --
                 <div class="group relative overflow-hidden cursor-pointer h-80">
                     <div class="absolute inset-0 bg-gradient-to-br from-stone-600 to-stone-700 transition-transform duration-500 group-hover:scale-110"></div>
                     <div class="absolute inset-0 flex flex-col justify-end p-8">
@@ -558,7 +696,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Why Choose Us -->
     <section class="py-24 bg-stone-900 text-white relative overflow-hidden">
@@ -569,23 +707,41 @@
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <h2 class="text-4xl md:text-5xl font-black mb-8 serif-jp">Why Choose Us</h2>
             <p class="text-xl md:text-2xl text-stone-300 leading-relaxed font-light">
-                We combine <span class="text-red-500 font-medium">strategy</span>, <span class="text-red-500 font-medium">creativity</span>, and <span class="text-red-500 font-medium">analytics</span> to deliver measurable growth and long-term brand impact.
+                As a <span class="text-red-500 font-medium"> Digital marketing agency in India</span> we don’t believe in: 
+                <br>
+                <ul class="c">
+                    <li>Boosting blindly and Posting randomly. </li>
+                    <li> Running ads without tracking.</li>
+                </ul>
+                <br>
+                <span class="text-red-500 font-medium">We believe in :</span>
+                <ul class="b">
+                    <li>Strategy before execution</li>
+                    <li>Research before scaling</li>
+                    <li>Data before decisions</li>
+                    <li>Systems before shortcuts</li>
+                </ul>
+                <br>
+                We <span class="text-red-500 font-medium">measure everything.</span> 
+               <br> We <span class="text-red-500 font-medium">optimize relentlessly.</span>
+                <br> We <span class="text-red-500 font-medium">scale responsibly.</span>
+
             </p>
             
             <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div class="p-6 border border-stone-800 rounded-lg hover:border-red-600 transition-colors">
-                    <div class="text-4xl font-bold text-red-600 mb-2">50+</div>
-                    <div class="text-stone-400">Projects Delivered</div>
+                    <div class="text-4xl font-bold text-red-600 mb-2">5+</div>
+                    <div class="text-stone-400">Projects in Progress</div>
                 </div>
                 <div class="p-6 border border-stone-800 rounded-lg hover:border-red-600 transition-colors">
-                    <div class="text-4xl font-bold text-red-600 mb-2">98%</div>
+                    <div class="text-4xl font-bold text-red-600 mb-2">95%</div>
                     <div class="text-stone-400">Client Satisfaction</div>
                 </div>
                 <div class="p-6 border border-stone-800 rounded-lg hover:border-red-600 transition-colors">
-                    <div class="text-4xl font-bold text-red-600 mb-2">5x</div>
-                    <div class="text-stone-400">Average ROI</div>
+                    <div class="text-4xl font-bold text-red-600 mb-2">2</div>
+                    <div class="text-stone-400">Project Complete</div>
                 </div>
-            </div>
+            </div> 
         </div>
     </section>
 
@@ -604,41 +760,103 @@
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                                     </svg>
-                                    <span>asianalley@gmail.com</span>
+                                    <span>asianalleys@gmail.com</span>
                                 </div>
                                 <div class="flex items-center space-x-3">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                                     </svg>
-                                    <span>Digital Dojo Worldwide</span>
+                                    <span>Hubli, Karnataka, India</span>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="mt-12">
-                            <div class="vertical-text text-6xl font-black opacity-20 serif-jp">Contact</div>
+                            <div class="vertical-text text-2xl font-black opacity-20 serif-jp">Contact</div>
                         </div>
                     </div>
                     
                     <div class="p-12">
-                        <form class="space-y-6" onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon.');">
+                        <form class="space-y-6" onsubmit="alert('Thank you! We will contact you soon.');" action="https://formsubmit.co/asianalleys@gmail.com" method="POST">
+
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
                             <div>
                                 <label class="block text-sm font-medium text-stone-700 mb-2">Name</label>
-                                <input type="text" class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" placeholder="Your name">
+                                <input type="text" class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" name="name" placeholder="Your name" required>
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-stone-700 mb-2">Email</label>
-                                <input type="email" class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" placeholder="your@email.com">
+                                <input type="email" class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" name="email" placeholder="your@email.com" required>
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-stone-700 mb-2">Message</label>
-                                <textarea rows="4" class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" placeholder="Tell us about your project"></textarea>
+                                <textarea rows="4" class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" name="message" placeholder="Tell us about your project"></textarea>
                             </div>
                             <button type="submit" class="w-full py-4 bg-stone-900 text-white font-bold hover:bg-red-600 transition-colors duration-300">
                                 Send Message
                             </button>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- FAQ Section -->
+    <section id="services" class="py-24 bg-stone-100 relative">
+        <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23000000\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-stone-900 mb-4 serif-jp">Frequently Asked Questions</h2>
+                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Q 1 -->
+                <div class="shoji-card p-8 group cursor-pointer">
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Are you only an SEO agency?</h3>
+                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer flex items-center gap-2" onclick="toggleService(this)">
+
+                     <span class="arrow transition-transform duration-300"> ↓</span>
+                    </div>
+
+                    <div class="extra-content mt-4 text-stone-600 hidden">
+                        <!-- YOU WILL ADD YOUR DETAILS HERE -->
+                        <p>No. We are a full-service digital marketing agency in India offering SEO services, performance marketing, paid ads, social media marketing, photography, video production, and website development.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                 <div class="shoji-card p-8 group cursor-pointer">
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Do you provide photography and video shoots along with digital marketing?</h3>
+                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer flex items-center gap-2" onclick="toggleService(this)">
+
+                     <span class="arrow transition-transform duration-300"> ↓</span>
+                    </div>
+
+                    <div class="extra-content mt-4 text-stone-600 hidden">
+                        <!-- YOU WILL ADD YOUR DETAILS HERE -->
+                        <p>Yes. We provide professional photography, commercial video production, and drone shoots in house to ensure your content aligns with your digital marketing in India strategy.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                 <div class="shoji-card p-8 group cursor-pointer">
+                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">How are you different from other digital marketing agencies?</h3>
+                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer flex items-center gap-2" onclick="toggleService(this)">
+
+                     <span class="arrow transition-transform duration-300"> ↓</span>
+                    </div>
+
+                    <div class="extra-content mt-4 text-stone-600 hidden">
+                        <!-- YOU WILL ADD YOUR DETAILS HERE -->
+                        <p>As a top digital marketing agency in India, we integrate strategy, creative production, and performance marketing into one connected system instead of treating them separately.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -650,7 +868,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="flex items-center space-x-3 mb-4 md:mb-0">
-                    <img src="3.png" alt="Asian Alleys Studios" class="h-10 w-auto opacity-100">
+                    <img src="13.png" alt="Asian Alleys Studios" class="h-10 w-auto opacity-100">
                     <span class="text-white font-bold text-lg">Asian Alleys Studios</span>
                 </div>
                 
@@ -790,6 +1008,16 @@
                 ease: 'power3.out'
             });
         });
+
+        function toggleService(element) {
+    const content = element.nextElementSibling;
+    const arrow = element.querySelector('.arrow');
+
+    content.classList.toggle('hidden');
+
+    // Rotate arrow
+    arrow.classList.toggle('rotate 90');
+}
 
         // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
