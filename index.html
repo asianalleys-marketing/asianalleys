@@ -11,6 +11,8 @@
     <meta property="og:description" content="Strategy. Creative. Performance. Built to scale modern brands.">
     <meta property="og:url" content="https://asianalleys.in">
     <meta property="og:image" content="https://asianalleys.in/14.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -748,55 +750,55 @@
                     </div>
                     
                     <div class="p-12">
-                        <form class="space-y-6"  
-                        action="https://formspree.io/f/mlgkbgpo"
-                         method="POST">
+                        <form id="contactForm"
+                            class="space-y-6"  
+                            action="https://formspree.io/f/mlgkbgpo"
+                            method="POST">
 
-                            
-                            <div>
-                                <label class="block text-sm font-medium text-stone-700 mb-2">Name</label>
-                                <input type="text" 
-                                        class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" 
-                                        name="name" 
-                                        placeholder="Your name" 
-                                        required>
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-stone-700 mb-2">Email</label>
-                                <input type="email" 
-                                        class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" 
-                                        name="email" 
-                                        placeholder="your@email.com" 
-                                        required>
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-stone-700 mb-2">Message</label>
-                                <textarea rows="4" 
+                                <div>
+                                    <label class="block text-sm font-medium text-stone-700 mb-2">Name</label>
+                                    <input type="text" 
                                             class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" 
-                                            name="message" 
-                                            placeholder="Tell us about your project"></textarea>
-                            </div>
-                            <div class="flex items-start space-x-3">
-                                <input
-                                    type="checkbox"
-                                    id="consent"
-                                    required
-                                    class="mt-1 w-4 h-4 text-red-600 border-stone-300 rounded focus:ring-red-600">
-                                
-                               <label for="consent" class="text-sm text-stone-600">
-                                    I agree to the
-                                    <a href="#" onclick="openPrivacyModal(); return false;" class="text-red-600 hover:underline">
-                                        Privacy Policy
-                                    </a>
-                                    and
-                                    <a href="#" onclick="openTermsModal(); return false;" class="text-red-600 hover:underline">
-                                        Terms & Conditions
-                                    </a>.
-                                </label>
-                            </div>
-                            <button type="submit" class="w-full py-4 bg-stone-900 text-white font-bold hover:bg-red-600 transition-colors duration-300">
-                                Send Message
-                            </button>
+                                            name="name" 
+                                            placeholder="Your name" 
+                                            required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-stone-700 mb-2">Email</label>
+                                    <input type="email" 
+                                            class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" 
+                                            name="email" 
+                                            placeholder="your@email.com" 
+                                            required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-stone-700 mb-2">Message</label>
+                                    <textarea rows="4" 
+                                                class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" 
+                                                name="message" 
+                                                placeholder="Tell us about your project"></textarea>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <input
+                                        type="checkbox"
+                                        id="consent"
+                                        required
+                                        class="mt-1 w-4 h-4 text-red-600 border-stone-300 rounded focus:ring-red-600">
+                                    
+                                <label for="consent" class="text-sm text-stone-600">
+                                        I agree to the
+                                        <a href="#" onclick="openPrivacyModal(); return false;" class="text-red-600 hover:underline">
+                                            Privacy Policy
+                                        </a>
+                                        and
+                                        <a href="#" onclick="openTermsModal(); return false;" class="text-red-600 hover:underline">
+                                            Terms & Conditions
+                                        </a>.
+                                    </label>
+                                </div>
+                                <button type="submit" class="w-full py-4 bg-stone-900 text-white font-bold hover:bg-red-600 transition-colors duration-300">
+                                    Send Message
+                                </button>
                         </form>
                     </div>
                 </div>
@@ -1335,6 +1337,30 @@
             document.getElementById('termsModal').classList.add('hidden');
             document.getElementById('termsModal').classList.remove('flex');
         }
+
+
+        const form = document.getElementById('contactForm');
+
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const data = new FormData(form);
+
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                alert('Thank you! Your message has been sent successfully.');
+                form.reset();
+            } else {
+                alert('Oops! Something went wrong. Please try again.');
+            }
+        });
 
 </script>
 
