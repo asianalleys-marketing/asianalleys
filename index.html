@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en-In" class="scroll-smooth">
 <head>
+    <meta name="description" content ="Asian Alleys Studios is a full-service digital marketing agency in Hubli, India offering SEO, performance marketing, social media, photography and video production.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asian Alleys Studios | Digital Marketing Dojo</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Asian Alleys Studios | Digital Marketing Agency">
+    <meta property="og:description" content="Strategy. Creative. Performance. Built to scale modern brands.">
+    <meta property="og:url" content="https://asianalleys.in">
+    <meta property="og:image" content="https://asianalleys.in/14.jpeg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -230,7 +237,8 @@
         .mobile-menu.active {
             clip-path: circle(150% at calc(100% - 40px) 40px);
         }
-        
+
+         
         /* Image Mask */
         .ink-mask {
             mask-image: url("data:image/svg+xml,%3Csvg width='200' height='200' viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40,40 Q100,20 160,40 T180,100 T160,160 T100,180 T40,160 T20,100 T40,40' fill='black'/%3E%3C/svg%3E");
@@ -720,6 +728,12 @@
                                 </div>
                                 <div class="flex items-center space-x-3">
                                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.129a11.042 11.042 0 005.516 5.516l1.129-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.95V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                    </svg>
+                                    <span>+91 XXXXX XXXXX</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                                     </svg>
@@ -734,21 +748,51 @@
                     </div>
                     
                     <div class="p-12">
-                        <form class="space-y-6" onsubmit="alert('Thank you! We will contact you soon.');" action="https://formsubmit.co/asianalleys@gmail.com" method="POST">
+                        <form class="space-y-6"  
+                        action="https://formspree.io/f/mlgkbgpo"
+                         method="POST">
 
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_template" value="table">
+                            
                             <div>
                                 <label class="block text-sm font-medium text-stone-700 mb-2">Name</label>
-                                <input type="text" class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" name="name" placeholder="Your name" required>
+                                <input type="text" 
+                                        class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" 
+                                        name="name" 
+                                        placeholder="Your name" 
+                                        required>
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-stone-700 mb-2">Email</label>
-                                <input type="email" class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" name="email" placeholder="your@email.com" required>
+                                <input type="email" 
+                                        class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" 
+                                        name="email" 
+                                        placeholder="your@email.com" 
+                                        required>
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-stone-700 mb-2">Message</label>
-                                <textarea rows="4" class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" name="message" placeholder="Tell us about your project"></textarea>
+                                <textarea rows="4" 
+                                            class="w-full px-4 py-3 border border-stone-300 focus:border-red-600 focus:ring-1 focus:ring-red-600 outline-none transition-colors" 
+                                            name="message" 
+                                            placeholder="Tell us about your project"></textarea>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <input
+                                    type="checkbox"
+                                    id="consent"
+                                    required
+                                    class="mt-1 w-4 h-4 text-red-600 border-stone-300 rounded focus:ring-red-600">
+                                
+                               <label for="consent" class="text-sm text-stone-600">
+                                    I agree to the
+                                    <a href="#" onclick="openPrivacyModal(); return false;" class="text-red-600 hover:underline">
+                                        Privacy Policy
+                                    </a>
+                                    and
+                                    <a href="#" onclick="openTermsModal(); return false;" class="text-red-600 hover:underline">
+                                        Terms & Conditions
+                                    </a>.
+                                </label>
                             </div>
                             <button type="submit" class="w-full py-4 bg-stone-900 text-white font-bold hover:bg-red-600 transition-colors duration-300">
                                 Send Message
@@ -760,64 +804,252 @@
         </div>
     </section> 
 
-    <!-- FAQ Section -->
-    <section id="services" class="py-24 bg-stone-100 relative">
-        <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23000000\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
-        
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-black text-stone-900 mb-4 serif-jp">Frequently Asked Questions</h2>
-                <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
-            </div>
+   <!-- FAQ Section -->
+<section id="services" class="py-24 bg-stone-100 relative">
+    <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23000000\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Q 1 -->
-                <div class="shoji-card p-8 group cursor-pointer">
-                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Are you only an SEO agency?</h3>
-                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer flex items-center gap-2" onclick="toggleService(this)">
-
-                     <span class="arrow transition-transform duration-300"> ↓</span>
-                    </div>
-
-                    <div class="extra-content mt-4 text-stone-600 hidden">
-                        <!-- YOU WILL ADD YOUR DETAILS HERE -->
-                        <p>No. We are a full-service digital marketing agency in India offering SEO services, performance marketing, paid ads, social media marketing, photography, video production, and website development.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Q2 -->
-                 <div class="shoji-card p-8 group cursor-pointer">
-                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">Do you provide photography and video shoots along with digital marketing?</h3>
-                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer flex items-center gap-2" onclick="toggleService(this)">
-
-                     <span class="arrow transition-transform duration-300"> ↓</span>
-                    </div>
-
-                    <div class="extra-content mt-4 text-stone-600 hidden">
-                        <!-- YOU WILL ADD YOUR DETAILS HERE -->
-                        <p>Yes. We provide professional photography, commercial video production, and drone shoots in house to ensure your content aligns with your digital marketing in India strategy.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Q3 -->
-                 <div class="shoji-card p-8 group cursor-pointer">
-                    <h3 class="text-xl font-bold text-stone-900 mb-3 group-hover:text-red-600 transition-colors">How are you different from other digital marketing agencies?</h3>
-                    <div class="mt-4 text-red-600 font-medium opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer flex items-center gap-2" onclick="toggleService(this)">
-
-                     <span class="arrow transition-transform duration-300"> ↓</span>
-                    </div>
-
-                    <div class="extra-content mt-4 text-stone-600 hidden">
-                        <!-- YOU WILL ADD YOUR DETAILS HERE -->
-                        <p>As a top digital marketing agency in India, we integrate strategy, creative production, and performance marketing into one connected system instead of treating them separately.
-                        </p>
-                    </div>
-                </div>
-            </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-black text-stone-900 mb-4 serif-jp">
+                Frequently Asked Questions
+            </h2>
+            <div class="w-24 h-1 bg-red-600 mx-auto mb-6"></div>
         </div>
-    </section>
+
+        <div class="max-w-4xl mx-auto space-y-3">
+
+            <div class="shoji-card p-5">
+                <h3 class="text-lg font-bold text-stone-900 mb-2">
+                    How do I get started?
+                </h3>
+                <p class="text-stone-600 text-sm">
+                    Just fill the contact form or email us. We start with a free call to understand your goals before recommending anything.
+                </p>
+            </div>
+
+            <div class="shoji-card p-5">
+                <h3 class="text-lg font-bold text-stone-900 mb-2">
+                    How long does SEO take to show results?
+                </h3>
+                <p class="text-stone-600 text-sm">
+                    Usually 3–6 months for real growth. SEO is a long term investment unlike ads, the results don’t stop when you stop paying.
+                </p>
+            </div>
+
+            <div class="shoji-card p-5">
+                <h3 class="text-lg font-bold text-stone-900 mb-2">
+                    Do you handle photography and marketing together?
+                </h3>
+                <p class="text-stone-600 text-sm">
+                    Yes that’s our edge. Strategy, shoot, content, and promotion all under one roof. No outsourcing, no miscommunication.
+                </p>
+            </div>
+
+            <div class="shoji-card p-5">
+                <h3 class="text-lg font-bold text-stone-900 mb-2">
+                    Do you work with small businesses and startups?
+                </h3>
+                <p class="text-stone-600 text-sm">
+                    Absolutely. We tailor every solution to your budget and stage whether you’re just starting out or ready to scale.
+                </p>
+            </div>
+
+            <div class="shoji-card p-5">
+                <h3 class="text-lg font-bold text-stone-900 mb-2">
+                    How do you measure if your work is actually delivering results?
+                </h3>
+                <p class="text-stone-600 text-sm">
+                    We track real metrics traffic, leads, conversions, and rankings. Every client gets clear monthly reports, no jargon.
+                </p>
+            </div>
+
+            <div class="shoji-card p-5">
+                <h3 class="text-lg font-bold text-stone-900 mb-2">
+                    Where are you based and do you work with clients outside India?
+                </h3>
+                <p class="text-stone-600 text-sm">
+                    We’re based in Hubli, Karnataka, India. We work with brands locally, across India, and with international clients remotely wherever you are, we can work with you.
+                </p>
+            </div>
+
+            <div class="shoji-card p-5">
+                <h3 class="text-lg font-bold text-stone-900 mb-2">
+                    Are you only an SEO agency?
+                </h3>
+                <p class="text-stone-600 text-sm">
+                    Not at all. We’re a full-service digital marketing agency SEO, paid ads, social media, content creation, photography, video production, and website development. All under one roof.
+                </p>
+            </div>
+
+            <div class="shoji-card p-5">
+                <h3 class="text-lg font-bold text-stone-900 mb-2">
+                    Do you provide a dedicated team for each client?
+                </h3>
+                <p class="text-stone-600 text-sm">
+                    Yes. Every client gets a dedicated point of contact who understands your brand, tracks your progress, and keeps you updated without getting passed around to different people every time.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Disclaimer Section -->
+<section class="py-6 bg-stone-100 border-t border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-xs text-stone-500 leading-relaxed text-center max-w-5xl mx-auto">
+            <strong>Disclaimer:</strong> The information on this website is provided for general informational and marketing purposes only. While Asian Alleys Studios strives to keep all content accurate and up to date, we make no guarantees regarding the completeness, reliability, or results of any information or services provided. Digital marketing outcomes such as rankings, traffic, leads, and conversions may vary based on industry, competition, budget, and other factors. By using this website, you acknowledge that any decisions made are at your own discretion and agree that Asian Alleys Studios shall not be liable for any loss or damages arising from the use of this website or its services.
+        </p>
+    </div>
+</section>
+
+<!-- Privacy Policy Modal -->
+<div id="privacyModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white max-w-4xl w-11/12 p-8 rounded-lg shadow-xl relative max-h-[85vh] overflow-y-auto">
+
+        <button onclick="closePrivacyModal()" class="absolute top-4 right-4 text-2xl hover:text-red-600">
+            &times;
+        </button>
+
+        <h2 class="text-2xl font-bold mb-6">Privacy Policy</h2>
+
+        <div class="text-stone-600 text-sm leading-relaxed space-y-4">
+
+            <p><strong>Last Updated:</strong> June 2026</p>
+
+            <p>
+                At Asian Alleys Studios, we value your privacy and are committed to protecting any information you share with us. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">Information We Collect</h3>
+            <p>
+                Name, Email address, Phone number, Business information voluntarily submitted through contact forms, and website usage data such as browser type, device information, pages visited, and analytics data.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">How We Use Your Information</h3>
+            <p>
+                To respond to inquiries, provide services, improve website performance, analyze visitor behavior, and communicate regarding projects, consultations, or service updates.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">Cookies and Analytics</h3>
+            <p>
+                Our website may use cookies and analytics tools to improve user experience and understand visitor behavior. You may disable cookies through your browser settings.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">Information Sharing</h3>
+            <p>
+                We do not sell, rent, or trade your personal information. Information may only be shared when necessary to provide requested services, comply with legal obligations, or protect our rights and security.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">Data Security</h3>
+            <p>
+                We take reasonable measures to protect submitted information, although no internet transmission or storage system can be guaranteed completely secure.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">Third-Party Links</h3>
+            <p>
+                Our website may contain links to external websites. We are not responsible for their privacy practices or content.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">Your Rights</h3>
+            <p>
+                You may request access, correction, or deletion of your personal information by contacting us.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">Contact Us</h3>
+            <p>
+                Asian Alleys Studios<br>
+                Email: asianalleys@gmail.com<br>
+                Phone: +91 XXXXX XXXXX
+            </p>
+
+            <h3 class="font-semibold text-stone-900">Changes to This Policy</h3>
+            <p>
+                We may update this Privacy Policy from time to time. Updated versions will be posted here.
+            </p>
+
+            <p>
+                By using this website, you agree to the terms outlined in this Privacy Policy.
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<!-- Terms Modal -->
+<div id="termsModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white max-w-4xl w-11/12 p-8 rounded-lg shadow-xl relative max-h-[85vh] overflow-y-auto">
+
+        <button onclick="closeTermsModal()" class="absolute top-4 right-4 text-2xl hover:text-red-600">
+            &times;
+        </button>
+
+        <h2 class="text-2xl font-bold mb-6">Terms & Conditions</h2>
+
+        <div class="text-stone-600 text-sm leading-relaxed space-y-4">
+
+            <p><strong>Last Updated:</strong> June 2026</p>
+
+            <h3 class="font-semibold text-stone-900">1. Services</h3>
+            <p>
+                Asian Alleys Studios provides digital marketing, SEO, paid advertising, website development, photography, video production, drone services, and related creative solutions.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">2. Client Responsibilities</h3>
+            <p>
+                Clients agree to provide accurate information, required assets, approvals, credentials, and feedback within agreed timelines.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">3. Payments</h3>
+            <p>
+                Pricing and payment schedules will be communicated before project commencement. Unless otherwise agreed, payments are non-refundable and work may begin only after the agreed initial payment is received.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">4. No Guaranteed Results</h3>
+            <p>
+                We do not guarantee specific rankings, traffic increases, lead volumes, sales figures, or advertising performance. Results depend on market conditions, competition, budget, and platform algorithms.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">5. Intellectual Property</h3>
+            <p>
+                Upon full payment, clients retain ownership of final approved deliverables unless otherwise agreed. We reserve the right to showcase completed work in portfolios and marketing materials.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">6. Third-Party Platforms</h3>
+            <p>
+                We are not responsible for platform outages, policy changes, algorithm updates, account suspensions, or actions by third-party providers.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">7. Limitation of Liability</h3>
+            <p>
+                Asian Alleys Studios shall not be liable for indirect, incidental, or consequential damages arising from website use, marketing performance, business losses, data loss, or third-party platform actions.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">8. Termination</h3>
+            <p>
+                Either party may terminate services with written notice. Outstanding payments remain due and completed work remains billable.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">9. Website Use</h3>
+            <p>
+                Users agree not to use the website unlawfully, attempt unauthorized access, copy content without permission, or interfere with website functionality.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">10. Changes to Terms</h3>
+            <p>
+                These Terms may be updated at any time. Updated versions will be posted on this page.
+            </p>
+
+            <h3 class="font-semibold text-stone-900">11. Contact Information</h3>
+            <p>
+                Asian Alleys Studios<br>
+                Email: asianalleys@gmail.com<br>
+                Phone: +91 XXXXX XXXXX
+            </p>
+
+        </div>
+    </div>
+</div>
 
 <!-- Footer -->
 <footer class="bg-stone-950 text-stone-400 py-14 border-t border-stone-900 relative overflow-hidden">
@@ -851,25 +1083,17 @@
             <div class="flex flex-col items-center space-y-5">
 
                 <!-- Footer Navigation -->
-                <div class="flex flex-wrap justify-center gap-6 text-sm font-medium">
+               <div class="flex flex-wrap justify-center gap-6 text-sm font-medium">
                     <a href="#"
-                       class="hover:text-red-500 hover:underline underline-offset-4 transition-all duration-300">
-                        Privacy
+                    onclick="openPrivacyModal(); return false;"
+                    class="hover:text-red-500 hover:underline underline-offset-4 transition-all duration-300">
+                        Privacy Policy
                     </a>
 
                     <a href="#"
-                       class="hover:text-red-500 hover:underline underline-offset-4 transition-all duration-300">
-                        Terms
-                    </a>
-
-                    <a href="#"
-                       class="hover:text-red-500 hover:underline underline-offset-4 transition-all duration-300">
-                        Careers
-                    </a>
-
-                    <a href="mailto:support@asianalleysstudios.com"
-                       class="hover:text-red-500 hover:underline underline-offset-4 transition-all duration-300">
-                        Support
+                    onclick="openTermsModal(); return false;"
+                    class="hover:text-red-500 hover:underline underline-offset-4 transition-all duration-300">
+                        Terms & Conditions
                     </a>
                 </div>
 
@@ -934,22 +1158,6 @@
 
                 </div>
 
-                <!-- Contact Info -->
-                <div class="flex flex-col items-center text-sm text-stone-400 space-y-1 relative z-20">
-
-                    <!-- Phone -->
-                    <a href="tel:+919876543210"
-                       class="hover:text-red-500 transition-colors duration-300">
-                        📞 +91 98765 43210
-                    </a>
-
-                    <!-- Email -->
-                    <a href="mailto:support@asianalleysstudios.com"
-                       class="hover:text-red-500 transition-colors duration-300">
-                        ✉ asianalleys@gmail.com
-                    </a>
-
-                </div>
             </div>
 
             <!-- Copyright -->
@@ -985,8 +1193,8 @@
         }
 
         window.addEventListener('load', () => {
-    setInterval(createPetal, 1000);
-});
+            setInterval(createPetal, 1000);
+        });
 
         // Navigation Scroll Effect
         let lastScroll = 0;
@@ -1093,15 +1301,6 @@
             });
         });
 
-        function toggleService(element) {
-    const content = element.nextElementSibling;
-    const arrow = element.querySelector('.arrow');
-
-    content.classList.toggle('hidden');
-
-    // Rotate arrow
-    arrow.classList.toggle('rotate 90');
-}
 
         // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1116,6 +1315,100 @@
                 }
             });
         });
+
+        function openPrivacyModal() {
+            document.getElementById('privacyModal').classList.remove('hidden');
+            document.getElementById('privacyModal').classList.add('flex');
+        }
+
+        function closePrivacyModal() {
+            document.getElementById('privacyModal').classList.add('hidden');
+            document.getElementById('privacyModal').classList.remove('flex');
+        }
+
+        function openTermsModal() {
+            document.getElementById('termsModal').classList.remove('hidden');
+            document.getElementById('termsModal').classList.add('flex');
+        }
+
+        function closeTermsModal() {
+            document.getElementById('termsModal').classList.add('hidden');
+            document.getElementById('termsModal').classList.remove('flex');
+        }
+
+</script>
+
+   <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+        "@type": "Question",
+        "name": "How do I get started?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Just fill the contact form or email us. We start with a free call to understand your goals before recommending anything."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "How long does SEO take to show results?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Usually 3–6 months for real growth. SEO is a long term investment unlike ads, the results don’t stop when you stop paying."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Do you handle photography and marketing together?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, that’s our edge. Strategy, shoot, content, and promotion all under one roof. No outsourcing, no miscommunication."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Do you work with small businesses and startups?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. We tailor every solution to your budget and stage whether you're just starting out or ready to scale."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "How do you measure if your work is actually delivering results?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We track real metrics including traffic, leads, conversions, and rankings. Every client receives clear monthly reports."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Where are you based and do you work with clients outside India?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We're based in Hubli, Karnataka, India. We work with brands locally, across India, and internationally through remote collaboration."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Are you only an SEO agency?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not at all. We’re a full-service digital marketing agency offering SEO, paid ads, social media marketing, content creation, photography, video production, and website development."
+        }
+        },
+        {
+        "@type": "Question",
+        "name": "Do you provide a dedicated team for each client?",
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every client gets a dedicated point of contact who understands their brand, tracks progress, and provides regular updates."
+        }
+        }
+    ]
+    }
     </script>
 </body>
 </html>
