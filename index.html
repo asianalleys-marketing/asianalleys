@@ -47,7 +47,7 @@ footer{margin-top:35px;color:#888;font-size:.9rem}
 <div class="box"><div class="num" id="m">00</div><div class="lab">Minutes</div></div>
 <div class="box"><div class="num" id="s">00</div><div class="lab">Seconds</div></div>
 </div>
-<p id="msg">Launching on <strong>1 August 2026</strong></p>
+<p id="msg">Launching on <strong>18 August 2026 at 10:00 AM IST</strong></p>
 <div class="btns">
 <a class="btn red" href="mailto:info@asianalleys.in">info@asianalleys.in</a>
 <a class="btn dark" href="https://www.instagram.com/asianalleystudio/" target="_blank">Instagram</a>
@@ -55,7 +55,7 @@ footer{margin-top:35px;color:#888;font-size:.9rem}
 <footer>© 2026 Asian Alleys Studios • Hubli, Karnataka, India</footer>
 </div>
 <script>
-const launch=new Date("2026-08-01T09:00:00+05:30").getTime();
+const launch=new Date("2026-08-18T10:00:00+05:30").getTime();
 const ids={d:d,h:h,m:m,s:s};
 setInterval(()=>{
 let diff=launch-Date.now();
@@ -70,4 +70,5 @@ m.textContent=String(ms).padStart(2,"0");
 s.textContent=String(ss).padStart(2,"0");
 },1000);
 </script>
-</body></html>
+</body>
+</html>
