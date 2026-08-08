@@ -26,8 +26,7 @@
 body:before{content:"";position:fixed;inset:-20%;background:radial-gradient(circle,#b30000 0%,transparent 30%),radial-gradient(circle at 80% 20%,#500 0%,transparent 25%);filter:blur(60px);opacity:.5}
 .card{position:relative;
 opacity:0;
-animation:fadeIn .8s ease forwards;max-width:900px;width:92%;padding:50px;border:1px solid rgba(255,255,255,.08);border-radius:24px;background:rgba(255,255,255,.05);backdrop-filter:blur(14px);text-align:center;z-index:1}
-@keyframes fadeIn{to{opacity:1}}
+transition:opacity .8s ease;max-width:900px;width:92%;padding:50px;border:1px solid rgba(255,255,255,.08);border-radius:24px;background:rgba(255,255,255,.05);backdrop-filter:blur(14px);text-align:center;z-index:1}
 .logo{font-size:2.2rem;font-weight:700}.logo span{color:#e11d48}
 h2{margin:20px 0 10px;font-size:2.6rem}.sub{color:#cfcfcf;line-height:1.8}
 .timer{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:40px 0}
@@ -60,6 +59,7 @@ footer{margin-top:35px;color:#888;font-size:.9rem}
 <footer>© 2026 Asian Alleys Studios • Hubli, Karnataka, India</footer>
 </div>
 <script>
+window.addEventListener('load', () => { document.querySelector('.card').style.opacity = 1; });
 const launch=new Date("2026-08-18T10:00:00+05:30").getTime();
 const ids={d:d,h:h,m:m,s:s};
 setInterval(()=>{
