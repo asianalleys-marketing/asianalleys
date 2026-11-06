@@ -23,36 +23,12 @@
 <meta property="og:image" content="https://asianalleys.in/og-image.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Poppins,sans-serif;background:#050505;color:#fff;display:flex;align-items:center;justify-content:center;min-height:100vh;overflow:hidden}
-body:before{content:"";position:fixed;inset:-20%;background:radial-gradient(circle,#b30000 0%,transparent 30%),radial-gradient(circle at 80% 20%,#500 0%,transparent 25%);filter:blur(60px);opacity:.5}
-.card{position:relative;
-opacity:0;
-transition:opacity .8s ease;max-width:900px;width:92%;padding:50px;border:1px solid rgba(255,255,255,.08);border-radius:24px;background:rgba(255,255,255,.05);backdrop-filter:blur(14px);text-align:center;z-index:1}
-.logo{font-size:2.2rem;font-weight:700}.logo span{color:#e11d48}
-h2{margin:20px 0 10px;font-size:2.6rem}.sub{color:#cfcfcf;line-height:1.8}
-.timer{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:40px 0}
-.box{background:#111;border:1px solid #e11d48;border-radius:16px;padding:18px}
-.num{font-size:2.3rem;font-weight:700;color:#ff4d4d}.lab{color:#aaa}
-.btns{display:flex;justify-content:center;gap:15px;flex-wrap:wrap;margin-top:25px}
-a.btn{padding:14px 24px;border-radius:40px;text-decoration:none;font-weight:600}
-.red{background:#e11d48;color:#fff}.dark{border:1px solid #e11d48;color:#fff}
-footer{margin-top:35px;color:#888;font-size:.9rem}
-@media(max-width:700px){.timer{grid-template-columns:repeat(2,1fr)}h2{font-size:2rem}.card{padding:30px}}
+*{margin:0;padding:0;box-sizing:border-box}
 </style>
 </head>
 <body>
-<template id="launch-head">
-    <meta name="description" content ="Asian Alleys Studios is a full-service digital marketing agency in Hubli, India offering SEO, performance marketing, social media, photography and video production.">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asian Alleys Studios | Digital Marketing Agency in Hubli, India</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="canonical" href="https://asianalleys.in">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Asian Alleys Studios | Digital Marketing Agency in Hubli, India">
-    <meta property="og:description" content="Strategy. Creative. Performance. Built to scale modern brands.">
-    <meta property="og:url" content="https://asianalleys.in">
-    <meta property="og:image" content="https://asianalleys.in/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
@@ -405,8 +381,8 @@ footer{margin-top:35px;color:#888;font-size:.9rem}
 </script>
 
 
-</template>
-<template id="launch-body">
+
+
 
     <!-- Cherry Blossom Container -->
     <div id="petals-container" class="fixed inset-0 pointer-events-none z-50 overflow-hidden"></div>
@@ -1673,54 +1649,6 @@ footer{margin-top:35px;color:#888;font-size:.9rem}
 
 </script>
 
-</template>
-<iframe id="launch-frame" title="Asian Alleys Studios" style="display:none;position:fixed;inset:0;width:100%;height:100%;border:0;z-index:999;"></iframe>
-<script>
-var __launchTime = new Date("2026-08-18T18:00:00+05:30").getTime();
-function showLaunchSite(){
-  var head = document.getElementById('launch-head').innerHTML;
-  var body = document.getElementById('launch-body').innerHTML;
-  var html = '<!DOCTYPE html><html lang="en-In" class="scroll-smooth"><head>' + head + '</head><body class="text-stone-800 antialiased">' + body + '</body></html>';
-  var frame = document.getElementById('launch-frame');
-  frame.srcdoc = html;
-  frame.style.display = 'block';
-  document.querySelector('.card').style.display = 'none';
-}
-</script>
-<div class="card">
-<img src="logofooter.png" alt="Asian Alleys Studios" style="max-width:150px;margin-bottom:20px">
-<div class="logo">Asian <span>Alleys</span> Studios</div>
-<h2>Something Extraordinary Is Coming.</h2>
-<p class="sub">We're putting the finishing touches on our official launch.<br>Digital Marketing • Branding • SEO • Web Development • Photography • Videography</p>
-<h3 style="margin-top:28px;color:#ff6b6b">Official Launch Countdown</h3>
-<div class="timer">
-<div class="box"><div class="num" id="d">00</div><div class="lab">Days</div></div>
-<div class="box"><div class="num" id="h">00</div><div class="lab">Hours</div></div>
-<div class="box"><div class="num" id="m">00</div><div class="lab">Minutes</div></div>
-<div class="box"><div class="num" id="s">00</div><div class="lab">Seconds</div></div>
-</div>
-<p id="msg">Launching on <strong>18 August 2026 at 6:00 PM IST</strong></p>
-<div class="btns">
-<a class="btn red" href="mailto:info@asianalleys.in">info@asianalleys.in</a>
-<a class="btn dark" href="https://www.instagram.com/asianalleystudio/" target="_blank">Instagram</a>
-</div>
-<footer>© 2026 Asian Alleys Studios • Hubli, Karnataka, India</footer>
-</div>
-<script>
-if (Date.now() >= __launchTime) { showLaunchSite(); } else { window.addEventListener('load', () => { document.querySelector('.card').style.opacity = 1; }); }
-const launch=new Date("2026-08-18T18:00:00+05:30").getTime();
-const ids={d:d,h:h,m:m,s:s};
-window.__cdInterval=setInterval(()=>{
-let diff=launch-Date.now();
-if(diff<=0){clearInterval(window.__cdInterval);showLaunchSite();return;}
-let ds=Math.floor(diff/86400000);diff%=86400000;
-let hs=Math.floor(diff/3600000);diff%=3600000;
-let ms=Math.floor(diff/60000);diff%=60000;
-let ss=Math.floor(diff/1000);
-d.textContent=String(ds).padStart(2,"0");
-h.textContent=String(hs).padStart(2,"0");
-m.textContent=String(ms).padStart(2,"0");
-s.textContent=String(ss).padStart(2,"0");
-},1000);
-</script></body>
+
+</body>
 </html>
